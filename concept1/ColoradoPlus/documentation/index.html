@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	
+	<title>Hungry HTML Template - Documentation</title>
+	
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="css/style.css" media="all">
+	<link rel="stylesheet" href="css/font-awesome.min.css" media="all">
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	
+</head>
+<body>
+
+<!-- START Logo -->
+<div id="logo">
+	<a href="http://themeforest.net/user/SubatomicThemes">
+		<img src="images/logo.png" alt="Subatomic Themes Logo" />
+	</a>
+</div>
+<!-- END Logo -->
+
+<!-- START Page Header -->
+<header>
+
+	<!-- START Title -->
+	<h1>Hungry</h1>
+	<h2>A One-Page HTML Restaurant Template</h2>
+	<!-- END title -->
+	
+	<!-- START Theme Info -->
+	<div id="theme-meta">
+		<span>Created: <strong>December 16th, 2014</strong></span>
+		<span>By: <strong>Subatomic Themes</strong></span>
+		<span>Contact: <a href="http://themeforest.net/user/SubatomicThemes" target="_blank">My Profile Page</a></span>
+	</div>
+	<!-- END Theme Info -->
+	
+	<!-- START Intro -->
+	<div id="theme-intro">
+		<i class="fa fa-bullhorn"></i>
+		<p>Many thanks for choosing <strong>Hungry</strong>! This elegant design is sure to impress
+		your potential diners! If you have any queries, 
+		please leave your question in the item's comments page over on themeforest.net, or you can drop me a personal 
+		message	via my <a href="http://themeforest.net/user/SubatomicThemes" target="_blank">
+		profile page</a>. Thanks!</p>
+	</div>
+	<!-- END Intro -->
+	
+	<h6>Table of Contents</h6>
+	<ol id="toc">
+		<li><a href="#introduction">Introduction</a></li>
+		<li><a href="#files">Included Files</a></li>
+		<li><a href="#html">HTML Structure</a></li>
+		<li><a href="#css">CSS Structure</a></li>
+		<li><a href="#header">Configuring the Page Header</a></li>
+		<li><a href="#colours">Changing Colour Schemes</a></li>
+		<li><a href="#fonts">Changing Fonts</a></li>
+		<li><a href="#wow">Scroll Reveal Effects</a></li>
+		<li><a href="#parallax">Parallax Backgrounds</a></li>
+		<li><a href="#gallery">The Gallery</a></li>
+		<li><a href="#menus">The Menus</a></li>
+		<li><a href="#slogans">The Slogan Dividers</a></li>
+		<li><a href="#reservations">Configuring the Reservation Form</a></li>
+		<li><a href="#credits">Sources &amp; Credits</a></li>
+	</ol>
+</header>
+<!-- END Page Header -->
+
+<!-- START Main Content -->
+<section id="main" role="main">
+	
+	<div id="introduction" class="section-title">
+		<div class="container">
+			<h1>01 - Introduction</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	<div class="container">
+		<p>First of all, let me personally thank you for purchasing <strong>Hungry</strong>!
+		There are many features within this template and this help file will explain each of them.
+		Although in order to modify any of the content, it is recommended that you have at least some knowledge of
+		<abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Stylesheets">CSS</abbr>, and jQuery.</p>
+		<h6>A Note About Support</h6>
+		<p>Although I do offer support for buyers who have purchased this HTML template, I am
+		just one person, so please allow for up to twenty four hours for a reply to any support
+		questions. This can vary depending on the volume of support requests I get!</p>
+		<h6>Changelog</h6>
+<pre>
+v1.0.1 - Minor improvements to "jquery-custom.js".
+v1.0.0 - Initial Release!
+</pre>
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="files" class="section-title">
+		<div class="container">
+			<h1>02. Included Files</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>There are a total of eleven <strong>HTML</strong> files inlcuded in the download package. With it being
+		a "one-page" design, your main focus would be on the "index.html" file. Although there are
+		blog pages in the template, they are not functional and need to be integrated into a 
+		<abbr title="Content Management System">CMS</abbr>. Here's a quick overview of each file;</p>
+		
+		<ul>
+			<li><strong>index.html</strong> - The main file that contains all of the 
+			single page content and functionality.</li>
+			<li><strong>template-blog-overview.html</strong> - Displays your blog's front
+			page in a masonry style layout.</li>
+			<li><strong>template-blog-single-full-width.html</strong> - A single full-width blog entry page with no
+			sidebar.</li>
+			<li><strong>template-blog-single-left-sidebar.html</strong> - A single blog entry with the sidebar on
+			the left. This template uses the pull/push CSS classes to keep the main content first in the source.</li>
+			<li><strong>template-blog-single-narrow.html</strong> - Similar to the full-width layout but with
+			a narrow column for the body content.</li>
+			<li><strong>template-blog-single-right-sidebar.html</strong> - A single typical blog entry with the
+			sidebar on the right.</li>
+			<li><strong>template-menu-one-column.html</strong> - Displays a menu layout in a single, narrow column.</li>
+			<li><strong>template-menu-two-columns.html</strong> - Displays the menu in a two column layout, similar to the one
+			on "index.html".</li>
+			<li><strong>template-menu-three-columns.html</strong> - Displays the menu in a grid-style three column layout.</li>
+			<li><strong>template-recipe-single.html</strong> - A single page entry for a recipe with meta information in the left column.</li>
+			<li><strong>template-recipe-single-swap.html</strong> - Another single page recipe entry with the meta information on the right (uses pull/push technique).</li>
+		</ul>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="html" class="section-title">
+		<div class="container">
+			<h1>03. HTML Structure</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>The HTML code used in this template complies with all of the <abbr title="World Wide Web Consortium">W3C</abbr> guidelines and have all been
+		validated. Editing each of the sections within the main "index.html" file is relatively simple. Here's
+		what a typical section will look like;</p>
+<pre>
+&lt;section id="hungry-about-us" class="section-container"&gt;
+	&lt;header class="section-heading"&gt;
+		&lt;h2 class="section-heading-title"&gt;About Us&lt;/h2&gt;
+		&lt;div class="section-heading-subtitle-container tilt-left"&gt;
+			&lt;h4 class="section-heading-subtitle"&gt;Whats our Story?&lt;/h4&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;
+	&lt;div class="grid-container"&gt;
+
+		...section content...
+
+	&lt;/div&gt;
+&lt;/section&gt;
+</pre>
+	
+		<p>As you can see it starts of with a section heading, sub-heading and then the main
+		content. Altering your content is as easy as replacing the content with your own to suit your
+		needs.</p>
+		<h6>About the Grid System</h6>
+		<p>Hungry uses a flexible and robust CSS grid system to layout certain content
+		into columns. It's used for almost every element that is split up to two
+		columns or more. Here's a brief example;</p>
+<pre>
+&lt;div class="grid-container"&gt;
+	&lt;div class="grid-50 tablet-grid-50 mobile-grid-100"&gt;
+	
+		...First Column Content...
+	
+	&lt;/div&gt;
+	
+	&lt;div class="grid-50 tablet-grid-50 mobile-grid-100"&gt;
+	
+		...Second Column Content...
+	
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+	
+		<p>This example shows a simple two column grid layout starting with a 
+		<code>grid-container</code>, which is needed to contain the columns.
+		Within it, there are two <code>&lt;div&gt;</code>s with the class name
+		<code>grid-50</code>. Think of the number value as a percentage. In this case,
+		each column is 50 percent wide so it will be split into two equal halves. You can
+		also control the layout in different screen resolutions for smaller devices with
+		the <code>tablet</code> and <code>mobile</code> prefixes. In the above example, desktop and
+		tablets will display the content over two columns, while mobiles will
+		display it in a single column.</p>
+		<p>For more information on this grid system, please visit the documentation page over at their
+		website at unsemanticgrid.com</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="css" class="section-title">
+		<div class="container">
+			<h1>04. CSS Structure</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>All of the template's styles can be found in the "style.css" file which is located in the
+		"css" folder. When viewing this file in a text editor, you will notice a table of contents
+		at the top. This makes it easier to find and organize each element of the template. Here's
+		what a typical chapter looks like;</p>
+		
+<pre>
+/**
+ *
+ *  8.2  - About Us
+ *  ---------------------------------------------------------------------------
+ *
+ */
+.about-images {
+	text-align: center;
+	position: relative;
+}
+.about-main {
+	border: 10px solid #f1f1f1;
+	-webkit-border-radius: 999px;
+	   -moz-border-radius: 999px;
+	        border-radius: 999px;
+}
+.about-inset {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 10px solid #f1f1f1;
+	-webkit-border-radius: 999px;
+	   -moz-border-radius: 999px;
+	        border-radius: 999px;
+}
+</pre>
+	
+		<p>The above code shows the CSS styling for the "About Us" section of the
+		home page. Changing the border colour here is as simple as chnaging <code>#f1f1f1;</code> to
+		<code>#900;</code> which would change it to red, just as an example. For more information about changing colour schemes, please see the "Changing Colour Schemes" section
+		of this help file.</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="header" class="section-title">
+		<div class="container">
+			<h1>05. Configuring the Page Header</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>At the very top of the single-page template (index.html) is where the full screen
+		slider, animated text and social icons reside. This chapter will go over how to
+		configure these.</p>
+		<h6>The Fullscreen Slider</h6>
+		<p>The slider uses the <strong>Cycle 2 Slider</strong> jQuery plugin. all of the options for
+		this are found directly in the HTML file itself using data attributes;</p>
+<pre>
+&lt;div class="cycle-slideshow"
+	 data-cycle-swipe="true"
+	 data-cycle-swipe-fx="fade"
+	 data-cycle-fx="fade"
+	 data-cycle-speed="1200"
+	 data-cycle-timeout="16000"&gt;
+	
+	&lt;img src="images/demo/slide-image-01.jpg" alt="Slide Image 01" /&gt;
+	&lt;img src="images/demo/slide-image-02.jpg" alt="Slide Image 02" /&gt;
+	...
+&lt;/div&gt;
+</pre>
+	
+		<p>The above code snippet shows all of the available options for the slider.
+		<code>data-cycle-fx</code> can be set to either "fade" or "slideHorz". The
+		speed and timeout options can be both set in milliseconds. You can have as many images 
+		as you want by inserting the images directly after one another, like in the example above.
+		Just keep in mind that the more images you have, the longer your site will take to load!</p>
+		<p>The optimal image size for this slider is 1920 x 1000 pixels. This ensures that they look
+		good on wide screen displays.</p>
+	
+		<h6>Animated Slogans</h6>
+		<p>The template uses the <strong>Textillate</strong> jQuery plugin to animate each of
+		the slogans. Editing these is as simple as editing an unordred list. Look for the following code
+		which is found directly after the slideshow code above;</p>
+<pre>
+&lt;div class="tlt"&gt;
+	&lt;ul class="header-texts"&gt;
+		&lt;li&gt;Dine with us!&lt;/li&gt;
+		&lt;li&gt;Try the Wine!&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+	
+		<p>As with the images, you can have as many slogans as you want! There are also some
+		options to configure if you need to change things like the animation and other
+		behaviours. These can be found in "jquery-custom.js" which is located in the "js" folder.</p>
+		<h6>Social Icons &amp; Tooltips</h6>
+		<p>The social icons are also laid out in a list and have Tooltips attached to them. They also
+		use the <strong>FontAwesome</strong> icons to display the social media icons;</p>
+<pre>
+&lt;div class="single-page-social-icons"&gt;
+	&lt;ul class="single-page-social-icons-list"&gt;
+		&lt;li&gt;&lt;a href="#" class="header-social-icon-tooltip" title="Follow us on Facebook!"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#" class="header-social-icon-tooltip" title="Find us in Twitter!"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+	
+		<p>To change the tooltip text, you simply need to alter the text in the "title" attribute.
+		Again, you can have as many as you wish but it is recommended that you only have around five
+		or six so that there are no layout issues.</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="colours" class="section-title">
+		<div class="container">
+			<h1>06. Changing Colour Schemes</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>You may notice a light brown accent colour that
+		gets used throughout the design, such as in certain headings and hovered elements.
+		To change this colour, all you need to do is go to the very bottom of the main
+		stylesheet (style.css) and find chapter 11 - ACCENT COLOUR. This chapter targets all
+		the CSS classes and ID's that use the accent colour in order to keep it in one place.</p>
+		<p>The default colour is <code>#ccad52;</code>. If you have a search and replace function
+		in your text editor, do a search for this string of text and replace it with a colour
+		of your choice!</p>
+		<p>There is also a divider image that uses this colour, which will have to be changed manually.
+		The PSD file for this is included within the download package. Simply alter what you
+		need with Photoshop (or similar software), and save over the original PNG file which
+		is found in the "images/assets" folder.</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="fonts" class="section-title">
+		<div class="container">
+			<h1>07. Changing Fonts</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>There is also a section in the main stylesheet (style.css) that controls the fonts used
+		in the template. If you wish to change the fonts, you will need to do two things. The first thing
+		is to edit the URL for the link at the top of each HTML file. It will look like this:</p>
+<pre>
+&lt;link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700%7CDroid+Serif:400,400italic,700,700italic%7CAguafina+Script" rel="stylesheet" type="text/css"&gt;
+</pre>	
+
+		<p>This links to Google's font library to get the fonts, so to change fonts, you will need to alter
+		this URL. Selecting your fonts from the Google Fonts website will give you a new link that you can replace this
+		one with.</p>
+		<p>Secondly, you will need to edit "style.css" at chapter 10 - FONTS. Now replace the names of the
+		fonts with the new ones that you have chosen.</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="wow" class="section-title">
+		<div class="container">
+			<h1>08. Scroll Reveal Effects</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>When scrolling through a page on the site in your browser, you may have noticed
+		elements fade into view with an animation effect. You can configure these by altering
+		certain lines within the HTML files. Each element to be animated will be wrapped in a <code>&lt;div&gt;</code>
+		and will look something like this:</p>
+<pre>
+&lt;div class="wow fadeInDown" data-wow-duration="2s" data-wow-offset="250"&gt;
+	...
+&lt;/div&gt;
+</pre>
+	
+		<p>This tells an element to fade in with a sliding down animation, will last two seconds,
+		and will only start animating when the element is 250 pixels from the bottom of the browser window. Of course,
+		you can change these to suit your needs or simply remove the line all together if you're
+		not a fan! There are many animations to choose from and all of which can be found in the
+		"animate.css" file.</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="parallax" class="section-title">
+		<div class="container">
+			<h1>09. Parallax Backgrounds</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>Parallax scrolling backgrounds are quite a common feature in
+		web design these days, and <strong>Hungry</strong> makes great use of them! If you wish
+		to change the images within each of the backgrounds, it's as simple as replacing the
+		images found in the "demo" folder with your own. And if you need to edit them via
+		CSS, you can find the code in the main stylesheet (style.css) in chapter 3.1 - 
+		Section Containers. Each section has a specific ID so you can even alter the
+		padding in each section as needed.</p>
+		<p>The recommended size for these images is 1920 x 1000 pixels, but you can also use repeating
+		images, like patterns. Should you need to change the javascript for any reason, you can
+		find the call to it in "jquery-custom.js" which is found in the "js" folder.</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="gallery" class="section-title">
+		<div class="container">
+			<h1>10. The Gallery</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>The gallery in this template uses a masonry layout which is handled by jQuery.
+		To get the same grid effect seen in the demo, consult the image sizes found in
+		the "images/demo/gallery" folder.</p>
+		<p>In order to have an image span across two columns, consider the following code as an example:</p>
+<pre>
+&lt;div class="hungry-gallery-item <mark>wide</mark> wow fadeIn" data-wow-duration="2s" data-wow-offset="250"&gt;
+	&lt;a class="image-hover wide lightbox-gallery" href="images/demo/gallery/gallery-05.jpg"&gt;
+		&lt;img src="images/demo/gallery/gallery-05.jpg" alt="Gallery Image" /&gt;
+		&lt;div class="image-hover-overlay"&gt;
+			&lt;i class="fa fa-search-plus"&gt;&lt;/i&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+	
+		<p>This is the markup required for a gallery item and you will notice an extra CSS class called
+		"wide" highlighted above. This will make the image span two columns provided it is big enough.</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="menus" class="section-title">
+		<div class="container">
+			<h1>11. Menus</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>Hungry uses a simple menu system that will link your menu items to either other
+		pages within your site, or scroll to another section on the same page. The main
+		navigation menu can be found near the top of each HTML file. Consider the following
+		code with two different links;</p>
+<pre>
+&lt;li&gt;&lt;a href="index.html#hungry-about-us"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="another-page.html"&gt;A Different Page&lt;/a&gt;&lt;/li&gt;
+</pre>
+	
+		<p>The first menu item here will scroll the user to the "About Us" section on the
+		same page, provided that the user is browsing the "index.html" file. Whereas the second menu item
+		will direct the user to a different page.</p>
+		<p>Its important to note here that the <code>href</code> attribute needs the "index.html" part of the URL before
+		the name of the section (which, here is "#hungry-about-us"). This is to ensure that should the user click on this
+		link from another page, they will be directed to the correct HTML file and the correct section.
+		The <code>#hungry-about-us</code> part of the URL is the ID of the section the user
+		will get scrolled to.</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="slogans" class="section-title">
+		<div class="container">
+			<h1>12. Slogan Dividers</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>Slogan dividers are a good way to break up each section on the page. You can use it
+		to display a simple message, or you can even use it as a call to action. In the example
+		HTML file, there is a regular one, and one wrapped in a link to create a call-to-action
+		like so;</p>
+<pre>
+&lt;a href="#" class="clickable-slogan"&gt;
+	&lt;section id="hungry-slogan-02" class="section-container parallax"&gt;
+		
+		...
+		
+	&lt;/section&gt;
+&lt;/a&gt;
+</pre>
+
+		<p>This example wraps your entire slogan divider section within an <code>&lt;a&gt;</code>
+		tag with a class name of <code>clickable-slogan</code>, making it a call-to-action!</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="reservations" class="section-title">
+		<div class="container">
+			<h1>13. Configuring the Reservation Form</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<p>Hungry comes with a simple reservation form that your customers can fill out and send
+		to you. It will give you information on that user including name, email, party number,
+		phone number, date, time, and an optional message so they can ask questions. The form
+		also has jQuery validation as well as back end validation. To configure the form, follow these
+		simple steps...</p>
+		
+		<h6>Step 01</h6>
+		<p>Make sure you have PHP installed on your web server. Most web hosts already have
+		PHP installed, but if you are unsure, please contact your hosting provider. There are
+		occasions where PHP might not be installed, such as on free web hosting.</p>
+		
+		<h6>Step 02</h6>
+		<p>In the "php" folder, you will see a PHP file named "process-reservation.php". You will
+		need to open this file with a text editor like notepad. Once you do, you will need to
+		enter your email address and your name in the first to lines you see (you can't miss it,
+		its commented!). This will ensure that everytime a user submits a form, it will get
+		sent to your e-mail address.</p>
+		<p><strong>Note:</strong> If you use a Gmail account, you will need to alter some more
+		details further down the page, where it says "Gmail Configurations". Here you will also
+		need to enter your email and password for your Gmail account. Everything else should be left untouched.</p>
+	
+		<h6>Step 03 (Optional)</h6>
+		<p>All of the validation handled by jQuery can be found in "jquery-custom.js" which is
+		found in the "js" folder. You can modify this if you need to display different error
+		messages or translate them. The code can be found near the bottom of the Javascript file.</p>
+	
+		<h6>Step 04</h6>
+		<p>Test it! Don't rely on your visitors to fill out your form all the time. You can
+		also send some test bookings to ensure everything is working as it should be.</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="faq" class="section-title">
+		<div class="container">
+			<h1>14. Frequently Asked Questions</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<h6>Q. I don't like the smooth scrolling! can I disable it please?</h6>
+		<p>A. You can! edit "jquery-custom.js" in a text editor and remove the call to it
+		if you prefer native browser scrolling. Or you can change its values. Here's the code
+		you're looking for;</p>
+<pre>
+$('html').niceScroll({
+
+	cursorcolor		: '#000',
+	cursoropacitymin	: 0.4,
+	cursoropacitymax	: 1,
+	cursorborder		: '1px solid transparent',
+	cursorborderradius	: '6px',
+	zindex 			: 9999,
+	scrollspeed		: 200
+
+});
+</pre>
+	
+		<h6>Q. What if I want to modify and use one of the jQuery scripts?</h6>
+		<p>A. By default, each of the template files loads in the javascript file
+		called "jquery-main.js". This file has all of the required scripts combined
+		into this file and minified. This is to reduce the amount of requests and
+		file size. If you need to modify any script, consider using a custom
+		script or adding your own functions in "jquery-custom.js". If you do need to
+		edit any scripts though, you will have to load each of the scripts directly.
+		They can all be found in the "js" folder.</p>
+	
+	</div>
+	
+	<!-- ################################################################## -->
+	<div id="credits" class="section-title">
+		<div class="container">
+			<h1>15. Sources &amp; Credits</h1><a href="#toc"><i class="fa fa-arrow-up"></i>Table of Contents</a>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<h6>jQuery &amp; PHP Plugins, and <abbr title="Cascading Stylesheet">CSS</abbr> Frameworks</h6>
+		<ul>
+			<li><strong>jQuery</strong> - (<a href="http://jquery.com/" target="_blank">Visit Site</a>)</li>
+			<li><strong>jQuery UI</strong> - (<a href="http://jqueryui.com/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Colorbox</strong> by <em>Jack Moore</em> - (<a href="http://www.jacklmoore.com/colorbox/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Lettering</strong> by <em>Dave Rupert</em> - (<a href="http://letteringjs.com/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Nicescroll</strong> by <em>InuYaksa</em> - (<a href="http://areaaperta.com/nicescroll/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Textillate</strong> by <em>Jordan Schroter</em> - (<a href="http://jschr.github.io/textillate/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Tooltipster</strong> by <em>Caleb Jacob</em> - (<a href="http://iamceege.github.io/tooltipster/" target="_blank">Visit Site</a>)</li>
+			<li><strong>jQuery Validate</strong> by <em>Jorn Zaefferer</em> - (<a href="http://jqueryvalidation.org/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Wow</strong> by <em>Matt Aussaguel</em> - (<a href="http://mynameismatthieu.com/WOW/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Animate</strong> by <em>Daniel Eden</em> - (<a href="http://daneden.github.io/animate.css/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Superfish</strong> by <em>Joel Birch</em> - (<a href="http://users.tpg.com.au/j_birch/plugins/superfish/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Hover Intent</strong> by <em>Brian Cherne</em> - (<a href="http://cherne.net/brian/resources/jquery.hoverIntent.html" target="_blank">Visit Site</a>)</li>
+			<li><strong>Formalize</strong> by <em>Nathan Smith</em> - (<a href="http://formalize.me/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Font Awesome</strong> by <em>Dave Gandy</em> - (<a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Unsemantic Grid</strong> by <em>Nathan Smith</em> - (<a href="http://unsemantic.com/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Parallax</strong> by <em>Ian Lunn</em> - (<a href="http://ianlunn.co.uk/plugins/jquery-parallax/" target="_blank">Visit Site</a>)</li>
+			<li><strong>ScrollTo</strong> by <em>Ariel Flesler</em> - (<a href="https://github.com/flesler/jquery.scrollTo" target="_blank">Visit Site</a>)</li>
+			<li><strong>LocalScroll</strong> by <em>Ariel Flesler</em> - (<a href="https://github.com/flesler/jquery.localScroll" target="_blank">Visit Site</a>)</li>
+			<li><strong>Images Loaded</strong> by <em>David DeSandro</em> - (<a href="https://github.com/desandro/imagesloaded" target="_blank">Visit Site</a>)</li>
+			<li><strong>Masonry</strong> by <em>David DeSandro</em> - (<a href="http://masonry.desandro.com/" target="_blank">Visit Site</a>)</li>
+			<li><strong>Cycle 2</strong> by <em>Malsup</em> - (<a href="http://jquery.malsup.com/cycle2/" target="_blank">Visit Site</a>)</li>
+			<li><strong>PHPMailer</strong> - (<a href="https://github.com/Synchro/PHPMailer" target="_blank">Visit Site</a>)</li>
+		</ul>
+		
+		<h6>Fonts Used from Google Fonts</h6>
+		<ul>
+			<li>Ubuntu</li>
+			<li>Droid Serif</li>
+			<li>Aguafina Script</li>
+		</ul>
+	
+	</div>
+	
+</section>
+<!-- END Main Content -->
+
+<!-- START Footer -->
+<footer>
+	<div class="container">
+		<p>Thanks again for purchasing this template! Although I've taken considerble time
+		to make sure there are no bugs or errors, if you do happen to spot something or
+		simply have a question regarding the template then please leave your question in the
+		item's comments page. Or if you prefer, you can always send me an e-mail via
+		my <a href="http://themeforest.net/user/SubatomicThemes" target="_blank">
+		profile page</a>.</p>
+		<p>Kind Regards,</p>
+		<cite>Dan - Subatomic Themes</cite>
+	</div>
+</footer>
+<!-- END Footer -->
+
+</body>
+</html>
